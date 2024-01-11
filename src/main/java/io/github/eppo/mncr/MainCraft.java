@@ -1,6 +1,6 @@
-package dev.eppo.mncr;
+package io.github.eppo.mncr;
 
-import dev.eppo.mncr.init.MncrItems;
+import io.github.eppo.mncr.init.MncrItems;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;

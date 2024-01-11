@@ -1,7 +1,7 @@
-package dev.eppo.mncr.init;
+package io.github.eppo.mncr.init;
 
-import dev.eppo.mncr.MainCraft;
-import dev.eppo.mncr.items.wearables.MainHelmet;
+import io.github.eppo.mncr.items.wearables.MainHelmet;
+import io.github.eppo.mncr.MainCraft;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.food.FoodProperties;
