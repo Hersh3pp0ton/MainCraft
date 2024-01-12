@@ -10,6 +10,7 @@ import net.minecraftforge.registries.RegistryObject;
 
 public class MncrItems {
 
+    //Armor
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, MainCraft.MODID);
 
     public static final RegistryObject<Item> MAIN_HELMET = ITEMS.register("main_helmet",
@@ -17,7 +18,7 @@ public class MncrItems {
             )
     );
 
-    //Vaccini
+    //Vaccines
 
     public static final RegistryObject<Item> CLASSIC_VACCINE = ITEMS.register("classic_vaccine",
             () -> new ClassicVaccine(new Item.Properties()

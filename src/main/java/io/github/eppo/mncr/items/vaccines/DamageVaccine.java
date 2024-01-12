@@ -17,7 +17,7 @@ public class DamageVaccine extends Item {
     public InteractionResultHolder<ItemStack> use(Level pLevel, Player pPlayer, InteractionHand pUsedHand) {
 
         if(!pLevel.isClientSide) {
-            pPlayer.addEffect(new MobEffectInstance(MobEffects.HARM, 1, 3, false, false));
+            pPlayer.addEffect(new MobEffectInstance(MobEffects.HARM, 1, 1, false, false));
 
             ItemStack item;
 
