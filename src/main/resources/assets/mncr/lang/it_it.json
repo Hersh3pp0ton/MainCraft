@@ -1,4 +1,11 @@
 {
+  //Oggetti
   "item.mncr.main_helmet": "Elmetto del main",
-  "item.mncr.vaccine": "Il Vaccino"
+
+  //Vaccini
+  "item.mncr.classic_vaccine": "Vaccino Classico",
+  "item.mncr.golden_vaccine": "Vaccino Dorato",
+  "item.mncr.damage_vaccine": "Vaccino del Danno",
+  "item.mncr.poison_vaccine": "Vaccino Velenoso",
+  "item.mncr.voretx_vaccine": "Vaccino Vortex"
 }

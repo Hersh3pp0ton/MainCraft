@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "mncr:item/vaccine"
+    "layer0": "mncr:item/golden_vaccine"
   }
 }

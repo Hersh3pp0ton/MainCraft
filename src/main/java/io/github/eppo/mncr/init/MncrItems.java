@@ -1,10 +1,8 @@
 package io.github.eppo.mncr.init;
 
+import io.github.eppo.mncr.items.vaccines.*;
 import io.github.eppo.mncr.items.wearables.MainHelmet;
 import io.github.eppo.mncr.MainCraft;
-import net.minecraft.world.effect.MobEffectInstance;
-import net.minecraft.world.effect.MobEffects;
-import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.*;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -19,20 +17,40 @@ public class MncrItems {
             )
     );
 
-    //Oggetti
+    //Vaccini
 
-    public static final RegistryObject<Item> VACCINE = ITEMS.register("vaccine",
-            () -> new Item(new Item.Properties()
-                    .stacksTo(16)
+    public static final RegistryObject<Item> CLASSIC_VACCINE = ITEMS.register("classic_vaccine",
+            () -> new ClassicVaccine(new Item.Properties()
+                    .stacksTo(64)
                     .rarity(Rarity.EPIC)
-                    .food(new FoodProperties.Builder()
-                            .fast()
-                            .effect(() -> new MobEffectInstance(MobEffects.CONFUSION, 200, 3, false, false), 100)
-                            .effect(() -> new MobEffectInstance(MobEffects.REGENERATION, 60, 4, false, false), 100)
-                            .effect(() -> new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 500, 2, false, false), 100)
+            )
+    );
 
-                            .build()
-                    )
+    public static final RegistryObject<Item> GOLDEN_VACCINE = ITEMS.register("golden_vaccine",
+            () -> new GoldenVaccine(new Item.Properties()
+                    .stacksTo(64)
+                    .rarity(Rarity.EPIC)
+            )
+    );
+
+    public static final RegistryObject<Item> DAMAGE_VACCINE = ITEMS.register("damage_vaccine",
+            () -> new DamageVaccine(new Item.Properties()
+                    .stacksTo(64)
+                    .rarity(Rarity.EPIC)
+            )
+    );
+
+    public static final RegistryObject<Item> POISON_VACCINE = ITEMS.register("poison_vaccine",
+            () -> new PoisonVaccine(new Item.Properties()
+                    .stacksTo(64)
+                    .rarity(Rarity.EPIC)
+            )
+    );
+
+    public static final RegistryObject<Item> VORTEX_VACCINE = ITEMS.register("vortex_vaccine",
+            () -> new VortexVaccine(new Item.Properties()
+                    .stacksTo(64)
+                    .rarity(Rarity.EPIC)
             )
     );
 }

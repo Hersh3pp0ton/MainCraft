@@ -1,4 +1,11 @@
 {
+  //Items
   "item.mncr.main_helmet": "Main Helmet",
-  "item.mncr.vaccine": "The Vaccine"
+
+  //Vaccines
+  "item.mncr.classic_vaccine": "Classic Vaccine",
+  "item.mncr.golden_vaccine": "Golden Vaccine",
+  "item.mncr.damage_vaccine": "Damage Vaccine",
+  "item.mncr.poison_vaccine": "Poisoned Vaccine",
+  "item.mncr.voretx_vaccine": "Vortex Vaccine"
 }
