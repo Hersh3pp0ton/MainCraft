@@ -30,12 +30,9 @@ public class MainHelmet extends ArmorItem {
             }
 
             if(player.getItemBySlot(EquipmentSlot.HEAD).getItem() == this) {
-                player.addEffect(new MobEffectInstance(
-                        MobEffects.ABSORPTION, 40, 4, false, false)
-                );
+                player.addEffect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 4, false, false));
+                player.addEffect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2, false, false));
             }
-
         }
-
     }
 }

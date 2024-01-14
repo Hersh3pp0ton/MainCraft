@@ -1,6 +1,13 @@
 {
   //Oggetti
+
+
+  //Blocchi
+  "block.mncr.pakistani_block": "Blocco del Pakistano",
+
+  //Attrezzi
   "item.mncr.main_helmet": "Elmetto del main",
+  "item.mncr.abortion_sword": "Spada dell'Aborto",
 
   //Vaccini
   "item.mncr.classic_vaccine": "Vaccino Classico",

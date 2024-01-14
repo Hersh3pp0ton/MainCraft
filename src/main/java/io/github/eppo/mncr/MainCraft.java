@@ -1,5 +1,6 @@
 package io.github.eppo.mncr;
 
+import io.github.eppo.mncr.init.MncrBlocks;
 import io.github.eppo.mncr.init.MncrItems;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
@@ -14,5 +15,6 @@ public class MainCraft {
         IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
 
         MncrItems.ITEMS.register(bus);
+        MncrBlocks.BLOCKS.register(bus);
     }
 }
