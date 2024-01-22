@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "X": {
+      "item": "minecraft:glass_pane"
+    },
+    "#": {
+      "item": "minecraft:gold_block"
+    }
+  },
+  "pattern": [
+    "X X",
+    "X#X",
+    " X "
+  ],
+  "result": {
+    "item": "mncr:golden_vaccine",
+    "count": 2
+  }
+}

@@ -6,8 +6,10 @@
   "block.mncr.pakistani_block": "Blocco del Pakistano",
 
   //Attrezzi
-  "item.mncr.main_helmet": "Elmetto del main",
+  "item.mncr.main_helmet": "Elmetto del Main",
   "item.mncr.abortion_sword": "Spada dell'Aborto",
+  "item.mncr.inverted_spear_of_heaven": "Lancia Celeste",
+  "item.mncr.pakistani_pickaxe": "Piccone del Pakistano",
 
   //Vaccini
   "item.mncr.classic_vaccine": "Vaccino Classico",

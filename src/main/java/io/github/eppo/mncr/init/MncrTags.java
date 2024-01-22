@@ -11,6 +11,9 @@ import org.jetbrains.annotations.Nullable;
 public class MncrTags {
     public static final TagKey<Block> NEEDS_ABORTO_TOOL = tag("needs_aborto_tool");
 
+    public static final TagKey<Block> NEEDS_SPEAR_TOOL = tag("needs_spear_tool");
+
+    public static final TagKey<Block> NEEDS_PAKISTANI_TOOL = tag("needs_pakistani_tool.json");
     private static TagKey<Block> tag(String name) {
         return BlockTags.create(new ResourceLocation(MainCraft.MODID, name));
     }
