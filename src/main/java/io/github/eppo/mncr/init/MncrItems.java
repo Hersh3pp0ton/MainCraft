@@ -8,13 +8,16 @@ import io.github.eppo.mncr.items.tools.AbortionSword;
 import io.github.eppo.mncr.items.tools.InvertedSpear;
 import io.github.eppo.mncr.items.tools.PakistaniPickaxe;
 import io.github.eppo.mncr.items.vaccines.*;
-import io.github.eppo.mncr.items.wearables.MainHelmet;
+import io.github.eppo.mncr.items.wearables.VaccineTalisman;
+import io.github.eppo.mncr.items.wearables.armor.MainBoots;
+import io.github.eppo.mncr.items.wearables.armor.MainChestplate;
+import io.github.eppo.mncr.items.wearables.armor.MainHelmet;
 import io.github.eppo.mncr.MainCraft;
+import io.github.eppo.mncr.items.wearables.armor.MainLeggings;
 import net.minecraft.world.item.*;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
-import org.lwjgl.opengl.INTELPerformanceQuery;
 
 public class MncrItems {
 
@@ -27,9 +30,13 @@ public class MncrItems {
             )
     );
 
+    public static final RegistryObject<Item> MAINITE = ITEMS.register("mainite",
+            () -> new Item(new Item.Properties()
+                    .stacksTo(64)));
+
     //Tools
     public static final RegistryObject<Item> ABORTION_SWORD = ITEMS.register("abortion_sword",
-            () -> new AbortionSword(AbortoTier.ABORTO, 1, -100f, new Item.Properties()
+            () -> new InvertedSpear(SpearTier.SPEAR, 5, 0.5f, new Item.Properties()
                     .stacksTo(1)
             )
     );
@@ -52,6 +59,28 @@ public class MncrItems {
             )
     );
 
+    public static final RegistryObject<Item> MAIN_CHESTPLATE = ITEMS.register("main_chestplate",
+            () -> new MainChestplate(MainMaterialInit.MAIN, ArmorItem.Type.CHESTPLATE, new Item.Properties()
+            )
+    );
+
+    public static final RegistryObject<Item> MAIN_LEGGINGS = ITEMS.register("main_leggings",
+            () -> new MainLeggings(MainMaterialInit.MAIN, ArmorItem.Type.LEGGINGS, new Item.Properties()
+            )
+    );
+
+    public static final RegistryObject<Item> MAIN_BOOTS = ITEMS.register("main_boots",
+            () -> new MainBoots(MainMaterialInit.MAIN, ArmorItem.Type.BOOTS, new Item.Properties()
+            )
+    );
+
+    //Wearables
+    public static final RegistryObject<Item> VACCINE_TALISMAN = ITEMS.register("vaccine_talisman",
+            () -> new VaccineTalisman(new Item.Properties()
+                    .stacksTo(1)
+                    .rarity(Rarity.EPIC)
+            )
+    );
 
     //BlockItems
     public static final RegistryObject<BlockItem> PAKISTANI_BLOCK_ITEM = ITEMS.register("pakistani_block",
@@ -61,6 +90,12 @@ public class MncrItems {
             )
     );
 
+    public static final RegistryObject<BlockItem> MAINITE_ORE_ITEM = ITEMS.register("mainite_ore",
+            () -> new BlockItem(MncrBlocks.MAINITE_ORE.get(), new Item.Properties()
+                    .stacksTo(64)
+                    .rarity(Rarity.COMMON)
+            )
+    );
 
     //Vaccines
 
@@ -71,7 +106,7 @@ public class MncrItems {
             )
     );
 
-    public static final RegistryObject<Item> GOLDEN_VACCINE = ITEMS.register("golden_vaccine.json",
+    public static final RegistryObject<Item> GOLDEN_VACCINE = ITEMS.register("golden_vaccine",
             () -> new GoldenVaccine(new Item.Properties()
                     .stacksTo(64)
                     .rarity(Rarity.EPIC)
@@ -98,6 +133,5 @@ public class MncrItems {
                     .rarity(Rarity.EPIC)
             )
     );
-
 
 }

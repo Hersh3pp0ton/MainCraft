@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "item": "minecraft:stick"
+    },
+    "X": {
+      "item": "mncr:mainite"
+    },
+    "@": {
+      "item": "minecraft:nether_wart"
+    }
+  },
+  "pattern": [
+    "X",
+    "@",
+    "#"
+  ],
+  "result": {
+    "item": "mncr:abortion_sword"
+  }
+}

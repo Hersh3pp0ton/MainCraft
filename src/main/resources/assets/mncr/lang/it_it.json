@@ -1,12 +1,19 @@
 {
   //Oggetti
-
+  "item.mncr.mainite": "Mainite",
 
   //Blocchi
   "block.mncr.pakistani_block": "Blocco del Pakistano",
+  "block.mncr.mainite_ore": "Minerale di Mainite",
+
+  //Armature
+  "item.mncr.main_helmet": "Elmetto del Main",
+  "item.mncr.main_chestplate": "Corsaletto del Main",
+  "item.mncr.main_leggings": "Gambali del Main",
+  "item.mncr.main_boots": "Stivali del Main",
 
   //Attrezzi
-  "item.mncr.main_helmet": "Elmetto del Main",
+  "item.mncr.vaccine_talisman": "Talismano del Vaccinato",
   "item.mncr.abortion_sword": "Spada dell'Aborto",
   "item.mncr.inverted_spear_of_heaven": "Lancia Celeste",
   "item.mncr.pakistani_pickaxe": "Piccone del Pakistano",

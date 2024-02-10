@@ -1,4 +1,4 @@
-package io.github.eppo.mncr.items.wearables;
+package io.github.eppo.mncr.items.wearables.armor;
 
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
@@ -10,9 +10,9 @@ import net.minecraft.world.item.ArmorMaterial;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 
-public class MainHelmet extends ArmorItem {
+public class MainChestplate extends ArmorItem {
 
-    public MainHelmet(ArmorMaterial material, Type type, Properties properties) {
+    public MainChestplate(ArmorMaterial material, Type type, Properties properties) {
         super(material, type, properties);
     }
 
@@ -29,9 +29,8 @@ public class MainHelmet extends ArmorItem {
                 return;
             }
 
-            if(player.getItemBySlot(EquipmentSlot.HEAD).getItem() == this) {
-                player.addEffect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 4, false, false));
-                player.addEffect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2, false, false));
+            if(player.getItemBySlot(EquipmentSlot.CHEST).getItem() == this) {
+                player.addEffect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1, false, false));
             }
         }
     }

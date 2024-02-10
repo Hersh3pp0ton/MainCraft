@@ -1,0 +1,8 @@
+{
+  "type": "forge:add_features",
+  "features": "mncr:mainite_ore",
+  "biomes": [
+    "minecraft:the_end"
+  ],
+  "step": "underground_ores"
+}

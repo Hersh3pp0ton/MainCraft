@@ -1,12 +1,19 @@
 {
   //Items
-
+  "item.mncr.mainite": "Mainite",
 
   //Blocks
   "block.mncr.pakistani_block": "Pakistani Block",
+  "block.mncr.mainite_ore": "Mainite Ore",
+
+  //Armor
+  "item.mncr.main_helmet": "Main Helmet",
+  "item.mncr.main_chestplate": "Main Chestplate",
+  "item.mncr.main_leggings": "Main Leggings",
+  "item.mncr.main_boots": "Main Boots",
 
   //Tools
-  "item.mncr.main_helmet": "Main Helmet",
+  "item.mncr.vaccine_talisman": "The Vaccined Bounty",
   "item.mncr.abortion_sword": "Abortion Sword",
   "item.mncr.inverted_spear_of_heaven": "Inverted Spear of Heaven",
   "item.mncr.pakistani_pickaxe": "Pakistani Pickaxe",
